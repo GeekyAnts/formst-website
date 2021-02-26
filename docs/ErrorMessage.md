@@ -10,7 +10,7 @@ You can use this component to render an error message for an input. `<ErrorMessa
 ### API
 
 ```tsx
-import {ErrorMessage} from 'formst';
+import { ErrorMessage } from "formst";
 
 <Formst formInstance={formInstance}>
   <ErrorMessage name="field-name" />
@@ -28,6 +28,6 @@ Any extra props will be passed down to the child component.
 
 ### Usage
 
-```
+```tsx
 <ErrorMessage name="title" component={CustomComponent}>
 ```

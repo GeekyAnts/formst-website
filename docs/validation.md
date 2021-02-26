@@ -13,7 +13,7 @@ Validations can be passed as an array. Currently, `required`, `email` and `numbe
 
 ```tsx
 const TodoForm = createFormModel(
-  'TodoForm',
+  "TodoForm",
   {
     title: types.string,
     description: types.string,
@@ -21,11 +21,11 @@ const TodoForm = createFormModel(
   },
   {
     validation: {
-      title: 'required',
-      description: 'required',
-      user: ['required', 'email'],
+      title: "required",
+      description: "required",
+      user: ["required", "email"],
     },
-  },
+  }
 );
 ```
 
@@ -33,29 +33,29 @@ const TodoForm = createFormModel(
 
 You can also add more validators:
 
-```
+```tsx
 defineValidators({
   minLen: (value: any) => ({
-    valid: typeof value === 'string' && value.length > 3,
-    message: 'Input should be more than 3 characters',
-  })
+    valid: typeof value === "string" && value.length > 3,
+    message: "Input should be more than 3 characters",
+  }),
 });
 ```
 
 ### Custom function
 
-```
+```tsx
 const TodoForm = createFormModel(
-  'TodoForm',
+  "TodoForm",
   {
     title: types.string,
     description: types.string,
   },
   {
     validation: {
-      title: ['required'],
+      title: ["required"],
       description: (value) => {
-        if(!value) return "This is required field";
+        if (!value) return "This is required field";
       },
     },
   }
