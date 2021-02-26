@@ -22,6 +22,14 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  padding-top: 16px;
+}
+.getStarted {
+  color: var(--ifm-color-primary);
+  font-size: small;
+  border-radius: 3px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .features {

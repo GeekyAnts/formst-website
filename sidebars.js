@@ -1,56 +1,21 @@
-module.exports = {
-  someSidebar: [
-    {
-      type: "category",
-      collapsed: false,
-      label: "Introduction",
-      items: [
-        "introduction",
-        "challenges",
-        "installation",
-        "additionalResources",
-      ],
-    },
-    {
-      type: "category",
-      collapsed: false,
-      label: "Forms",
-      items: ["useCheckbox", "useCheckboxGroup", "useRadioGroup", "useSwitch"],
-    },
-    {
-      type: "category",
-      collapsed: false,
-      label: "Buttons",
-      items: ["useToggleButton"],
-    },
-    {
-      type: "category",
-      collapsed: false,
-      label: "Interactions",
-      items: ["useHover", "useFocusRing"],
-    },
-    {
-      type: "category",
-      collapsed: false,
-      label: "Overlays",
-      items: ["OverlayContainer", "useOverlayPosition"],
-    },
-    // {
-    //   type: "category",
-    //   label: "Collections",
-    //   collapsed: false,
-    //   items: ["useMenu"],
-    // },
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @format
+ */
 
-    // "Web/Android/iOS": [
-    //   "useFocusRing",
-    //   "useHover",
-    //   "useOverlayPosition",
-    //   "Checkbox",
-    //   "Radio",
-    //   "Switch",
-    //   "Menu",
-    //   "ToggleButton",
-    // ],
-  ],
+module.exports = {
+  someSidebar: {
+    Basics: ["idea", "gettingStarted", "validation", "nested", "middleware"],
+    APIs: [
+      "createFormModel",
+      "formst",
+      "field",
+      "errorMessage",
+      "defineValidators",
+    ],
+  },
 };

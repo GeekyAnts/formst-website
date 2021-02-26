@@ -1,20 +1,21 @@
 module.exports = {
-  title: "React Native ARIA",
-  tagline:
-    "React Native ARIA handles behaviour, accessibility and interactions so you can implement custom components and design systems for Android, iOS and Web",
-  url: "https://react-native-aria.geekyants.com",
+  title: "Formst",
+  tagline: "High-performance Form Builder for React and Javascript ",
+  url: "https://formstjs.github.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon-light.png",
   organizationName: "geekyants", // Usually your GitHub org/user name.
-  projectName: "react-native-aria", // Usually your repo name.
+  projectName: "formst", // Usually your repo name.
   themeConfig: {
+    sidebarCollapsible: false,
     navbar: {
-      title: "React Native ARIA",
+      // title: "Formst",
       logo: {
         alt: "My Site Logo",
         src: "img/logo.png",
+        srcDark: "img/logo-dark.png",
       },
       items: [
         {
@@ -24,13 +25,13 @@ module.exports = {
           position: "right",
         },
         {
-          href: "https://github.com/GeekyAnts/react-native-aria",
+          href: "https://github.com/formstjs/formst",
           label: "GitHub",
           position: "right",
         },
         {
           href:
-            "https://geekyants.com/?utm_source=Landing_Page&utm_medium=Hire_Us&utm_campaign=RN_ARIA",
+            "https://geekyants.com/hire?utm_source=Landing_Page&utm_medium=Hire_Us&utm_campaign=Formst",
           label: "Hire Us",
           position: "right",
         },
@@ -53,12 +54,12 @@ module.exports = {
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/GeekyAnts/react-native-aria",
+              href: "https://github.com/formstjs/formst",
             },
-            {
-              label: "Roadmap",
-              href: "https://trello.com/b/8HcLFH3K/react-native-aria-roadmap",
-            },
+            // {
+            //   label: "Roadmap",
+            //   href: "https://trello.com/b/8HcLFH3K/react-native-aria-roadmap",
+            // },
           ],
         },
         {
@@ -66,7 +67,8 @@ module.exports = {
           items: [
             {
               label: "Built with ❤️ at GeekyAnts ",
-              href: "https://geekyants.com/?utm_source=Landing_Page&utm_medium=Made_with_love&utm_campaign=RN_ARIA",
+              href:
+                "https://geekyants.com/?utm_source=Landing_Page&utm_medium=Built_with_love&utm_campaign=Formst",
             },
           ],
         },
@@ -80,8 +82,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/geekyants/react-native-aria-website/tree/main/",
+          editUrl: "https://github.com/formstjs/formst-docs",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

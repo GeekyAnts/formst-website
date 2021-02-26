@@ -7,19 +7,20 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #4b3ab1;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-primary: #534ce9;
+  --ifm-color-primary-dark: #4b44d2;
+  --ifm-color-primary-darker: #423dba;
+  --ifm-color-primary-darkest: #3a35a3;
+  --ifm-color-primary-light: #645eeb;
+  --ifm-color-primary-lighter: #7570ed;
+  --ifm-color-primary-lightest: #8782f0;
   --ifm-code-font-size: 95%;
-  --ifm-footer-link-hover-color: #fff;
-  --trial-color: rgb(96, 203, 230);
+  --ifm-navbar-link-color: white;
+  --ifm-navbar-link-hover-color: darkgray;
+  --trial-color: #534ce9;
   /* --ifm-navbar-padding-vertical */
   /* --ifm-navbar-padding-horizontal: 10rem; */
-  --svg-fill-color: var(--ifm-color-primary);
+  --svg-fill-color: #21232a;
 }
 
 .navbar-sidebar__brand {
@@ -35,6 +36,7 @@
 
 .navbar {
   background-color: var(--ifm-color-primary);
+  box-shadow: none;
 }
 
 .navbar {
@@ -74,7 +76,7 @@ html[data-theme="dark"] {
   --ifm-menu-color-active: var(--trial-color);
   --ifm-link-color: var(--trial-color);
   --ifm-tabs-color-active: var(--trial-color);
-  --svg-fill-color: #fff;
+  --svg-fill-color: #534ce9;
 }
 
 html[data-theme="dark"] .admonition-heading {
