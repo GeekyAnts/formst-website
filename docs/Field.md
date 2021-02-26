@@ -29,6 +29,6 @@ Any extra props will be passed down to the child component.
 
 ### Usage
 
-```
+```tsx
 <Field name="title" component={CustomComponent}>
 ```
