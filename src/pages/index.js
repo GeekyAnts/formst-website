@@ -354,7 +354,7 @@ function Home() {
           name="keywords"
           content="React, JavaScript, Open Source, OSS, JS Library, Form, Forms, MST, MobX-State-Tree, Flat Form, Stepper Form, Nested Form"
         />
-        <meta property="og:url" content="https://formstjs.github.io/formst/" />
+        <meta property="og:url" content="https://formst.geekyants.com/" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:title" content="Formst" />
         <meta
@@ -363,6 +363,14 @@ function Home() {
         />
         <meta property="og:site_name" content="Formst" />
         <meta name="twitter:image:alt" content="Formst JS Library" />
+        <meta
+          property="og:image"
+          content="https://formst.geekyants.com/img/logo-light.png"
+        ></meta>
+        <meta
+          name="twitter:image"
+          content="https://formst.geekyants.com/img/logo-light.png"
+        ></meta>
       </Head>
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
