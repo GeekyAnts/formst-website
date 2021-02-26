@@ -355,7 +355,6 @@ function Home() {
           content="React, JavaScript, Open Source, OSS, JS Library, Form, Forms, MST, MobX-State-Tree, Flat Form, Stepper Form, Nested Form"
         />
         <meta property="og:url" content="https://formst.geekyants.com/" />
-        <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:title" content="Formst" />
         <meta
           property="og:description"
@@ -365,7 +364,7 @@ function Home() {
         <meta name="twitter:image:alt" content="Formst JS Library" />
         <meta
           property="og:image"
-          content="https://formst.geekyants.com/img/logo-light.png"
+          content="https://formst.geekyants.com/img/og-icon.png"
         ></meta>
         <meta
           name="twitter:image"
