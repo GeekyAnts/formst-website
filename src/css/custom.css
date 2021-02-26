@@ -21,6 +21,7 @@
   /* --ifm-navbar-padding-vertical */
   /* --ifm-navbar-padding-horizontal: 10rem; */
   --svg-fill-color: #21232a;
+  --ifm-heading-line-height: 1.35;
 }
 
 .navbar-sidebar__brand {
