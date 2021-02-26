@@ -347,7 +347,7 @@ function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="High-performance Javascript Form Builder for React"
+      description="High-performance JS Form Builder for React"
     >
       <Head>
         <meta
@@ -377,7 +377,7 @@ function Home() {
           <div className="row">
             <div className="col col--5 padding-top--lg">
               <h1 className="hero__title hero__title--left">
-                High-performance Javascript Form Builder for React
+                High-performance JS Form Builder for React
               </h1>
               <div className={styles.buttons}>
                 <Link

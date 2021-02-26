@@ -1,6 +1,6 @@
 module.exports = {
   title: "Formst",
-  tagline: "High-performance Javascript Form Builder for React",
+  tagline: "High-performance JS Form Builder for React",
   url: "https://formstjs.github.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
