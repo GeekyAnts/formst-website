@@ -368,7 +368,7 @@ function Home() {
         ></meta>
         <meta
           name="twitter:image"
-          content="https://formst.geekyants.com/img/logo-light.png"
+          content="https://formst.geekyants.com/img/og-icon.png"
         ></meta>
       </Head>
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
