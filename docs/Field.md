@@ -10,7 +10,7 @@ You can use `<Field />` to reduce the code you write for wiring up inputs and ha
 ### API
 
 ```tsx
-import {Field} from 'formst';
+import { Field } from "formst";
 
 <Formst formInstance={formInstance}>
   // This will handle name, value, onChange and onBlur props for you
@@ -20,7 +20,7 @@ import {Field} from 'formst';
 
 ### Parameters
 
-```jsx
+```tsx
 name: string, required;
 component: string | React.Component;
 ```
