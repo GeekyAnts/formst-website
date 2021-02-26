@@ -380,10 +380,7 @@ function Home() {
               </h1>
               <div className={styles.buttons}>
                 <Link
-                  className={clsx(
-                    "button button--lg button--secondary ",
-                    styles.getStarted
-                  )}
+                  className={clsx("button button--lg  ", styles.getStarted)}
                   style={{ color: "var(--ifm-color-primary)" }}
                   to={useBaseUrl("docs/")}
                 >
