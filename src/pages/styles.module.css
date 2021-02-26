@@ -25,12 +25,13 @@
   padding-top: 16px;
 }
 .getStarted {
-  color: #534ce9;
+  color: #534ce9 !important;
   font-size: small;
   border-radius: 3px;
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: #ffffff;
+  background-color: #ffffff !important;
+  border: 0;
 }
 
 .features {
