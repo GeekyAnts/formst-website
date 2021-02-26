@@ -1,6 +1,6 @@
 module.exports = {
   title: "Formst",
-  tagline: "High-performance Form Builder for React and Javascript ",
+  tagline: "High-performance Javascript Form Builder for React",
   url: "https://formstjs.github.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -45,8 +45,12 @@ module.exports = {
           items: [
             {
               label: "Getting Started",
-              to: "docs/",
+              to: "docs/gettingStarted",
             },
+            // {
+            //   label: "Examples",
+            //   to: "example",
+            // },
           ],
         },
         {
@@ -56,10 +60,11 @@ module.exports = {
               label: "GitHub",
               href: "https://github.com/formstjs/formst",
             },
-            // {
-            //   label: "Roadmap",
-            //   href: "https://trello.com/b/8HcLFH3K/react-native-aria-roadmap",
-            // },
+            {
+              label: "Contribution Guidelines",
+              href:
+                "https://github.com/formstjs/formst/blob/master/CONTRIBUTING.md",
+            },
           ],
         },
         {

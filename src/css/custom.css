@@ -129,3 +129,21 @@ html[data-theme="dark"] .navbar__link--active {
 .hero__title {
   font-size: 2.8rem;
 }
+.intro_image {
+  height: 28rem;
+  object-fit: contain;
+}
+.feature_section_padding {
+  padding-bottom: 4rem !important;
+}
+@media screen and (max-width: 966px) {
+  .hero__title {
+    font-size: 1.7rem;
+  }
+  .intro_image {
+    height: 14rem;
+  }
+  .feature_section_padding {
+    padding-bottom: 1rem !important;
+  }
+}
