@@ -13,7 +13,7 @@ module.exports = {
     navbar: {
       // title: "Formst",
       logo: {
-        alt: "My Site Logo",
+        alt: "Formst Logo",
         src: "img/logo.png",
         srcDark: "img/logo-dark.png",
       },
