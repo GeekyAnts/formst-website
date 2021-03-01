@@ -21,6 +21,7 @@
   /* --ifm-navbar-padding-vertical */
   /* --ifm-navbar-padding-horizontal: 10rem; */
   --svg-fill-color: #21232a;
+  --ifm-heading-line-height: 1.35;
 }
 
 .navbar-sidebar__brand {
@@ -127,7 +128,7 @@ html[data-theme="dark"] .navbar__link--active {
 }
 
 .hero__title {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
 }
 .intro_image {
   height: 28rem;
