@@ -7,7 +7,7 @@ slug: /
 
 ## Introduction
 
-Formst is a simple and performant library for creating forms in React running on Mobx-State-Tree. It comes with all the goodness of [MobX-state-tree](https://mobx-state-tree.js.org/) and makes your thought process data-first for building the forms.
+Formst is a simple and performant library fyor creating forms in React running on Mobx-State-Tree. It comes with all the goodness of [MobX-state-tree](https://mobx-state-tree.js.org/) and makes your thought process data-first for building the forms.
 
 ## Motivation
 
@@ -18,3 +18,7 @@ We felt that the form building process would become way simpler if we looked at 
 ## Use Case
 
 This can be used with all sorts of forms: nested, stepper and flat. The only constraint is that Formst has the following dependencies: mobx, mobx-react/mobx-react-lite and mobx-state-tree. Ultimately, this works best with applications that use these as their state management solution.
+
+## When not to use
+
+Formst was specifically built for applications running on MST(MobX-State-Tree). So if you are not using MST as your state management solution and you care about your bundle size, this package may not be for you.

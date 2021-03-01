@@ -60,23 +60,25 @@ npm add formst
 
    ```tsx
    export default observer(() => {
-       todoForm.onSubmit((formInstance: Instance<typeof todoForm>) => {
-         console.log(formInstance.getFormData());
-         formInstance.setSubmitting(false);
-       });
-         return (
+     todoForm.onSubmit((formInstance: Instance<typeof todoForm>) => {
+       console.log(formInstance.getFormData());
+       formInstance.setSubmitting(false);
+     });
+
+     return (
        <Formst formInstance={todoForm}>
          <form onSubmit={todoForm.handleSubmit}>
            <Field name="title" />
            <ErrorMessage name="title" />
-           <br />
+
            <Field name="description" />
            <ErrorMessage name="description" />
 
            <button type="submit">Submit</button>
          </form>
        </Formst>
-       });
+     );
+   });
    ```
 
 4. Optional: If you don't like `Field` API, you can directly plug this to an element.
@@ -95,8 +97,6 @@ npm add formst
              onBlur={todoForm.handleBlur}
            ></input>
            <ErrorMessage name="title" />
-
-           <br />
 
            <Field name="description" />
            <ErrorMessage name="description" />
