@@ -22,6 +22,7 @@
   /* --ifm-navbar-padding-horizontal: 10rem; */
   --svg-fill-color: #21232a;
   --ifm-heading-line-height: 1.35;
+  --ifm-footer-link-hover-color: #c5c2ff;
 }
 
 .navbar-sidebar__brand {
@@ -78,6 +79,7 @@ html[data-theme="dark"] {
   --ifm-link-color: var(--trial-color);
   --ifm-tabs-color-active: var(--trial-color);
   --svg-fill-color: #534ce9;
+  --ifm-footer-link-hover-color: #bcc7ef;
 }
 
 html[data-theme="dark"] .admonition-heading {
