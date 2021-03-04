@@ -344,6 +344,13 @@ function Feature({ imageUrl, title, description }) {
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
+  const [starCount, setStarCount] = React.useState(0);
+  React.useEffect(() => {
+    fetch("https://api.github.com/repos/formstjs/formst")
+      .then((response) => response.json())
+      .then((data) => setStarCount(data.stargazers_count));
+  }, []);
+
   return (
     <Layout
       title={`${siteConfig.title}`}
@@ -386,6 +393,24 @@ function Home() {
                 >
                   Get Started
                 </Link>
+                <a
+                  className="btn text-white bg-indigo-400 w-full sm:w-auto sm:ml-4 rounded-md py-3 px-5 items-center flex"
+                  href="https://github.com/GeekyAnts/nativebase"
+                >
+                  {/* <GitHub fill="#fff" className="mr-2" />
+                  {starCount}
+                  <Star className="ml-2" /> */}
+                </a>
+                <div className="githubStarsConatiner">
+                  <img
+                    className="githubStarsImage"
+                    src="/img/github_logo.png"
+                  ></img>
+                  <p id="stars" className="githubStarsText">
+                    {starCount}
+                  </p>
+                  <p className="githubStarsText">stars</p>
+                </div>
               </div>
             </div>
             <div className="col col--7 hero-image">
