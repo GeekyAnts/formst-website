@@ -317,7 +317,7 @@ function Home() {
 
   return (
     <Layout
-      title={`${siteConfig.title}`}
+      title={`${siteConfig.title}|Model-driven form library for React`}
       description="Model-driven form library for React"
     >
       <Head>
@@ -369,20 +369,19 @@ function Home() {
                 >
                   Get Started
                 </Link>
-                <a
-                  className="btn text-white bg-indigo-400 w-full sm:w-auto sm:ml-4 rounded-md py-3 px-5 items-center flex"
-                  href="https://github.com/GeekyAnts/nativebase"
-                ></a>
-                <div className="githubStarsConatiner">
-                  <img
-                    className="githubStarsImage"
-                    src="/img/github_logo.png"
-                  ></img>
-                  <p id="stars" className="githubStarsText">
-                    {starCount}
-                  </p>
-                  <p className="githubStarsText">stars</p>
-                </div>
+
+                <a href="https://github.com/formstjs/formst">
+                  <div className="githubStarsConatiner">
+                    <img
+                      className="githubStarsImage"
+                      src="/img/github_logo.png"
+                    ></img>
+                    <p id="stars" className="githubStarsText">
+                      {starCount}
+                    </p>
+                    <p className="githubStarsText">stars</p>
+                  </div>
+                </a>
               </div>
             </div>
             <div className="col col--6 hero-image">

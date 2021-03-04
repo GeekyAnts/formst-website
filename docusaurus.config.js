@@ -46,10 +46,6 @@ module.exports = {
               label: "Getting Started",
               to: "docs/gettingStarted",
             },
-            // {
-            //   label: "Examples",
-            //   to: "example",
-            // },
           ],
         },
         {
