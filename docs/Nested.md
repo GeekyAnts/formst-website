@@ -165,6 +165,7 @@ const CreateProjectComponent = observer(() => {
               height="500"
               width="100%"
               title="formst-demo"
+              frameBorder="0"
               allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
               sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
             ></iframe>
