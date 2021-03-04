@@ -13,7 +13,7 @@ In this example, CreateProject form model contains other form models, Milestone 
 
 ```tsx
 const Milestone = createFormModel(
-  'Milestone',
+  "Milestone",
   {
     name: types.string,
   },
@@ -21,29 +21,29 @@ const Milestone = createFormModel(
     validation: {
       name: (name) => {
         if (!name) {
-          return 'Required';
+          return "Required";
         }
       },
     },
-  },
+  }
 );
 
 const ProjectTeam = createFormModel(
-  'ProjectTeam',
+  "ProjectTeam",
   {
     name: types.string,
     lead: types.string,
   },
   {
     validation: {
-      name: 'required',
-      lead: ['required', 'minLen'],
+      name: "required",
+      lead: ["required", "minLen"],
     },
-  },
+  }
 );
 
 const CreateProject = createFormModel(
-  'CreateProject',
+  "CreateProject",
   {
     name: types.string,
     milestones: types.array(Milestone),
@@ -51,11 +51,11 @@ const CreateProject = createFormModel(
   },
   {
     validation: {
-      name: ['required'],
-      milestones: 'valid',
-      team: 'valid',
+      name: ["required"],
+      milestones: "valid",
+      team: "valid",
     },
-  },
+  }
 );
 ```
 
@@ -63,8 +63,8 @@ Note: `valid` is required to ensure that the form checks the child form.
 
 ```tsx
 const createProjectForm = CreateProject.create({
-  projectTeam: {name: '', lead: ''},
-  milestones: [{name: ''}],
+  projectTeam: { name: "", lead: "" },
+  milestones: [{ name: "" }],
 });
 ```
 
@@ -80,12 +80,12 @@ const CreateProjectComponent = observer(() => {
     (formInstance: Instance<typeof createProjectForm>) => {
       console.log(formInstance.getFormData());
       formInstance.setSubmitting(false);
-    },
+    }
   );
 
   // Root Formst component for root form instance
   <Formst formInstance={createProjectForm}>
-    <form key={'master'} onSubmit={createProjectForm.handleSubmit}>
+    <form key={"master"} onSubmit={createProjectForm.handleSubmit}>
       {createProjectForm.totalMilestone}
       <div>
         Project name:
@@ -102,10 +102,10 @@ const CreateProjectComponent = observer(() => {
       <div>
         <ErrorMessage name="name" />
       </div>
-      <div style={{border: '1px solid black'}}>
+      <div style={{ border: "1px solid black" }}>
         {/* Nested Formst component for the nested instance */}
         <Formst formInstance={createProjectForm.team}>
-          <div key={'second'}>
+          <div key={"second"}>
             <div>
               Team name:
               {/* "name" value for name prop here refers to createProjectForm.team.name */}
@@ -157,3 +157,14 @@ const CreateProjectComponent = observer(() => {
   </Formst>;
 });
 ```
+
+## Full Example
+
+  <iframe
+              src="https://codesandbox.io/embed/nestedformexample-forked-fchjg?fontsize=14&hidenavigation=1&theme=dark"
+              height="500"
+              width="100%"
+              title="formst-demo"
+              allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+              sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+            ></iframe>

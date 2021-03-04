@@ -130,10 +130,10 @@ html[data-theme="dark"] .navbar__link--active {
 }
 
 .hero__title {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
 }
 .intro_image {
-  height: 28rem;
+  height: 22rem;
   object-fit: contain;
 }
 .feature_section_padding {
