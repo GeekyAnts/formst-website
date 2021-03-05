@@ -24,7 +24,7 @@
   justify-content: flex-start;
   padding-top: 16px;
 }
-.getStarted {
+/* .getStarted {
   color: #534ce9 !important;
   font-size: small;
   border-radius: 3px;
@@ -32,7 +32,7 @@
   padding-bottom: 12px;
   background-color: #ffffff !important;
   border: 0;
-}
+} */
 
 .features {
   display: flex;

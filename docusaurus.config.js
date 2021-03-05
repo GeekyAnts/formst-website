@@ -1,6 +1,6 @@
 module.exports = {
   title: "Formst",
-  tagline: "High-performance JS Form Builder for React",
+  tagline: "Model-driven form library for React",
   url: "https://formstjs.github.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -11,11 +11,10 @@ module.exports = {
   themeConfig: {
     sidebarCollapsible: false,
     navbar: {
-      // title: "Formst",
+      title: "Formst",
       logo: {
         alt: "Formst Logo",
-        src: "img/logo.png",
-        srcDark: "img/logo-dark.png",
+        src: "img/favicon-dark.png",
       },
       items: [
         {
@@ -47,10 +46,6 @@ module.exports = {
               label: "Getting Started",
               to: "docs/gettingStarted",
             },
-            // {
-            //   label: "Examples",
-            //   to: "example",
-            // },
           ],
         },
         {
