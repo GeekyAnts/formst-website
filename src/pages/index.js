@@ -345,9 +345,10 @@ function Home() {
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
           <div className="row">
-            <div className="col col--6 ">
+            <div className="col col--7 ">
               <h1 className="hero__title hero__title--left">
-                Model-driven Form Library for React
+                Model-driven Form Library <br />
+                for React
               </h1>
               <p class="hero__subtitle hero__subtitle--left">
                 Based on{" "}
@@ -358,7 +359,7 @@ function Home() {
                 >
                   MobX-State-Tree
                 </a>{" "}
-                to validate & structure forms in React
+                to validate <br />& structure forms in React
               </p>
               <div className={styles.buttons}>
                 <Link
@@ -384,7 +385,8 @@ function Home() {
                 </a>
               </div>
             </div>
-            <div className="col col--6 hero-image">
+            {/* <div className="col col--1 hero-image"></div> */}
+            <div className="col col--5 hero-image">
               <img
                 className="intro_image"
                 src="img/intro.png"

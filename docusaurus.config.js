@@ -14,8 +14,8 @@ module.exports = {
       title: "Formst",
       logo: {
         alt: "Formst Logo",
-        src: "/img/formst3.png",
-        srcDark: "/img/formst4.png",
+        src: "/img/favicon-light.png",
+        srcDark: "/img/favicon-dark.png",
       },
       items: [
         {
