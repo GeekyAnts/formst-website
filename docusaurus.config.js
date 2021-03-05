@@ -27,6 +27,7 @@ module.exports = {
         {
           href: "https://github.com/formstjs/formst",
           label: "GitHub",
+          target: "_blank",
           position: "right",
         },
         {
