@@ -1,6 +1,6 @@
 module.exports = {
   title: "Formst",
-  tagline: "Model-driven form library for React",
+  tagline: "Model-driven Form Library for React",
   url: "https://formstjs.github.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -14,7 +14,8 @@ module.exports = {
       title: "Formst",
       logo: {
         alt: "Formst Logo",
-        src: "img/favicon-dark.png",
+        src: "/img/formst3.png",
+        srcDark: "/img/formst4.png",
       },
       items: [
         {

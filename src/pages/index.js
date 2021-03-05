@@ -317,8 +317,8 @@ function Home() {
 
   return (
     <Layout
-      title={`${siteConfig.title}|Model-driven form library for React`}
-      description="Model-driven form library for React"
+      title={`${siteConfig.title} | Model-driven Form Library for React`}
+      description="Model-driven Form Library for React"
     >
       <Head>
         <meta
@@ -347,7 +347,7 @@ function Home() {
           <div className="row">
             <div className="col col--6 ">
               <h1 className="hero__title hero__title--left">
-                Model-driven form library for React
+                Model-driven Form Library for React
               </h1>
               <p class="hero__subtitle hero__subtitle--left">
                 Based on{" "}
@@ -358,7 +358,7 @@ function Home() {
                 >
                   MobX-State-Tree
                 </a>{" "}
-                to validate & structure forms in React.
+                to validate & structure forms in React
               </p>
               <div className={styles.buttons}>
                 <Link
