@@ -150,3 +150,29 @@ html[data-theme="dark"] .navbar__link--active {
     padding-bottom: 1rem !important;
   }
 }
+.githubStarsConatiner {
+  height: 50px;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.githubStarsImage {
+  width: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.githubStarsText {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  margin-left: 3px;
+}
