@@ -15,10 +15,23 @@ While working on a recent project, [GeekyAnts](https://geekyants.com) devs reali
 
 We felt that the form building process would become way simpler if we looked at the data and UI parts separately. These can later be integrated with a few lines of code. Ultimately, we looked at the way MST allows us to do this with forms. We decided to build a library based on MST that includes commonly used functionalities required in any form, such as validations and pre-processing.
 
-## Use Case
+<p align="center"><b>Introducing Formst: A Model-driven Form Library for React 🙌🏼</b></p>
+
+## Philosophy
+
+**When it comes to building forms, _Data-First > UI-First_**
+
+We realised that we could simplify the form-building process by looking at the data and UI parts separately. Later, these can be integrated with a few lines of code. Here's a few advantages of using a model-driven approach:
+
+- State-management becomes much easier when you separate business logic from the UI
+- Testing is much simpler since your logic and UI have been decoupled
+
+For more information, check out [UI as an afterthought.](https://medium.com/@mweststrate/ui-as-an-afterthought-26e5d2bb24d6)
+
+## Use Cases
 
 This can be used with all sorts of forms: nested, stepper and flat. The only constraint is that Formst has the following dependencies: mobx, mobx-react/mobx-react-lite and mobx-state-tree. Ultimately, this works best with applications that use these as their state management solution.
 
 ## When not to use
 
-Formst was specifically built for applications running on MST(MobX-State-Tree). So if you are not using MST as your state management solution and you care about your bundle size, this package may not be for you.
+Formst was specifically built for applications running on MST(MobX-State-Tree). If you are not using MST as your state management solution and want to keep your bundle size small, this package may not be for you.
