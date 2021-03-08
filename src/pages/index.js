@@ -309,6 +309,7 @@ function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   const [starCount, setStarCount] = React.useState(0);
+
   React.useEffect(() => {
     fetch("https://api.github.com/repos/formstjs/formst")
       .then((response) => response.json())
@@ -389,7 +390,7 @@ function Home() {
             <div className="col col--5 hero-image">
               <img
                 className="intro_image"
-                src="img/intro.png"
+                src="img/formst-intro-dark.svg"
                 alt="Introduction"
               ></img>
             </div>
