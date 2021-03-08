@@ -126,46 +126,71 @@ const SVGs = {
   "Easy on the bundle": (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="97"
-      height="81"
-      viewBox="0 0 97 81"
+      width="222"
+      height="199.5"
+      viewBox="0 0 222 199.5"
     >
-      <g id="bundle" transform="translate(0.5 0.5)">
-        <path
-          id="Path"
-          d="M86,71H78a1.972,1.972,0,1,1,0-3.944h8a5.966,5.966,0,0,0,6-5.917V17.75a5.966,5.966,0,0,0-6-5.917H40a2.029,2.029,0,0,1-1.416-.576L31.172,3.944H10A5.966,5.966,0,0,0,4,9.861V61.139a5.966,5.966,0,0,0,6,5.917h8A1.972,1.972,0,1,1,18,71H10A9.943,9.943,0,0,1,0,61.139V9.861A9.943,9.943,0,0,1,10,0H32a2.029,2.029,0,0,1,1.416.576l7.412,7.313H86A9.943,9.943,0,0,1,96,17.75V61.139A9.943,9.943,0,0,1,86,71Z"
-          fill="#b1ade3"
-          stroke="#b1ade3"
-          stroke-miterlimit="10"
-          stroke-width="1"
-        />
-        <path
-          id="Path-2"
-          data-name="Path"
-          d="M1.5,35C.672,35,0,34.1,0,33V2C0,.9.672,0,1.5,0S3,.9,3,2V33C3,34.108,2.328,35,1.5,35Z"
-          transform="translate(47 32)"
-          fill="#b1ade3"
-          stroke="#b1ade3"
-          stroke-width="1"
-        />
-        <path
-          id="Path-3"
-          data-name="Path"
-          d="M12,14a2.009,2.009,0,0,1-1.416-.584l-10-10A2,2,0,0,1,3.413.585L12,9.171,20.587.585a2,2,0,0,1,2.828,2.829l-10,10A1.993,1.993,0,0,1,12,14Z"
-          transform="translate(37 54)"
-          fill="#b1ade3"
-          stroke="#b1ade3"
-          stroke-width="1"
-        />
-        <path
-          id="Path-4"
-          data-name="Path"
-          d="M34,15H6A5.829,5.829,0,0,1,0,9.375v-7.5A1.941,1.941,0,0,1,2,0,1.941,1.941,0,0,1,4,1.875v7.5A1.944,1.944,0,0,0,6,11.25H34a1.944,1.944,0,0,0,2-1.875v-7.5a2,2,0,0,1,4,0v7.5A5.829,5.829,0,0,1,34,15Z"
-          transform="translate(28 65)"
-          fill="#534ce9"
-          stroke="#b1ade3"
-          stroke-width="1"
-        />
+      <g
+        id="Group_63"
+        data-name="Group 63"
+        transform="translate(-1094.5 -1135.5)"
+      >
+        <text
+          id="Easy_on_the_bundle"
+          data-name="Easy on the bundle"
+          transform="translate(1205.5 1293)"
+          fill="#fff"
+          font-size="26"
+          font-family="Heebo-Bold, Heebo"
+          font-weight="700"
+        >
+          <tspan x="-110.398" y="0">
+            Easy on the bundle
+          </tspan>
+        </text>
+        <text
+          id="_1.7kB_that_s_all"
+          data-name="1.7kB, that's all"
+          transform="translate(1096 1314)"
+          fill="#fff"
+          font-size="14"
+          font-family="Heebo-Regular, Heebo"
+        >
+          <tspan x="-46.467" y="15">
+            1.7kB, that&apos;s all
+          </tspan>
+        </text>
+        <g id="bundle" transform="translate(1158 1136)">
+          <path
+            id="Path"
+            d="M86,71H78a1.972,1.972,0,1,1,0-3.944h8a5.966,5.966,0,0,0,6-5.917V17.75a5.966,5.966,0,0,0-6-5.917H40a2.029,2.029,0,0,1-1.416-.576L31.172,3.944H10A5.966,5.966,0,0,0,4,9.861V61.139a5.966,5.966,0,0,0,6,5.917h8A1.972,1.972,0,1,1,18,71H10A9.943,9.943,0,0,1,0,61.139V9.861A9.943,9.943,0,0,1,10,0H32a2.029,2.029,0,0,1,1.416.576l7.412,7.313H86A9.943,9.943,0,0,1,96,17.75V61.139A9.943,9.943,0,0,1,86,71Z"
+            fill="#b1ade3"
+            stroke="#b1ade3"
+            stroke-miterlimit="10"
+            stroke-width="1"
+          />
+          <path
+            id="Path-2"
+            data-name="Path"
+            d="M1.5,35C.672,35,0,34.1,0,33V2C0,.9.672,0,1.5,0S3,.9,3,2V33C3,34.108,2.328,35,1.5,35Z"
+            transform="translate(47 32)"
+            fill="#b1ade3"
+          />
+          <path
+            id="Path-3"
+            data-name="Path"
+            d="M12,14a2.009,2.009,0,0,1-1.416-.584l-10-10A2,2,0,0,1,3.413.585L12,9.171,20.587.585a2,2,0,0,1,2.828,2.829l-10,10A1.993,1.993,0,0,1,12,14Z"
+            transform="translate(37 54)"
+            fill="#b1ade3"
+          />
+          <path
+            id="Path-4"
+            data-name="Path"
+            d="M34,15H6A5.829,5.829,0,0,1,0,9.375v-7.5A1.941,1.941,0,0,1,2,0,1.941,1.941,0,0,1,4,1.875v7.5A1.944,1.944,0,0,0,6,11.25H34a1.944,1.944,0,0,0,2-1.875v-7.5a2,2,0,0,1,4,0v7.5A5.829,5.829,0,0,1,34,15Z"
+            transform="translate(28 65)"
+            fill="#534ce9"
+          />
+        </g>
       </g>
     </svg>
   ),
