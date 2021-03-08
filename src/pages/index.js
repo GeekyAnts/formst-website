@@ -305,6 +305,61 @@ function Feature({ imageUrl, title, description }) {
   );
 }
 
+const introSvg = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="350"
+    height="350"
+    viewBox="0 0 784 784"
+  >
+    <g
+      id="Group_55"
+      data-name="Group 55"
+      transform="translate(-14536.268 -1244.298)"
+    >
+      <g
+        id="Group_36"
+        data-name="Group 36"
+        transform="translate(14536.268 1244.298)"
+      >
+        <path
+          id="Path_18"
+          data-name="Path 18"
+          d="M90.106,0H464.6A90.106,90.106,0,0,1,554.71,90.106V464.6A90.106,90.106,0,0,1,464.6,554.71H90.106A90.106,90.106,0,0,1,0,464.6V90.106A90.106,90.106,0,0,1,90.106,0Z"
+          transform="translate(405.689 0) rotate(47)"
+          fill="var(--svg-intro-background-color)"
+        />
+        <g
+          id="Group_34"
+          data-name="Group 34"
+          transform="translate(132.509 138.836)"
+        >
+          <g
+            id="Group_31"
+            data-name="Group 31"
+            transform="translate(94.257 0) rotate(13)"
+          >
+            <path
+              id="Path_21"
+              data-name="Path 21"
+              d="M57.374,46.411v65.78h104.7v46.046H57.374V266.042H0V0H174.681V46.411Z"
+              transform="matrix(0.839, 0.545, -0.545, 0.839, 144.897, 100.754)"
+              fill="var(--svg-intro-fill-color)"
+            />
+            <path
+              id="Path_20"
+              data-name="Path 20"
+              d="M57.374,46.411v65.78h104.7v46.046H57.374V266.042H0V0H174.681V46.411Z"
+              transform="matrix(-0.839, -0.545, 0.545, -0.839, 291.001, 318.259)"
+              fill="var(--svg-intro-fill-color)"
+            />
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+);
+
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
@@ -388,11 +443,12 @@ function Home() {
             </div>
             {/* <div className="col col--1 hero-image"></div> */}
             <div className="col col--5 hero-image">
-              <img
+              {/* <img
                 className="intro_image"
                 src="img/formst-intro-dark.svg"
                 alt="Introduction"
-              ></img>
+              ></img> */}
+              {introSvg}
             </div>
           </div>
         </div>
