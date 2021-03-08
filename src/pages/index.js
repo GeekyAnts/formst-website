@@ -442,14 +442,7 @@ function Home() {
               </div>
             </div>
             {/* <div className="col col--1 hero-image"></div> */}
-            <div className="col col--5 hero-image">
-              {/* <img
-                className="intro_image"
-                src="img/formst-intro-dark.svg"
-                alt="Introduction"
-              ></img> */}
-              {introSvg}
-            </div>
+            <div className="col col--5 hero-image">{introSvg}</div>
           </div>
         </div>
       </header>
