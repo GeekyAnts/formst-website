@@ -23,6 +23,8 @@
   --svg-fill-color: #21232a;
   --ifm-heading-line-height: 1.35;
   --ifm-footer-link-hover-color: #c5c2ff;
+  --svg-intro-background-color: #fbfbfb;
+  --svg-intro-fill-color: #534ce9;
 }
 
 .navbar-sidebar__brand {
@@ -80,6 +82,8 @@ html[data-theme="dark"] {
   --ifm-tabs-color-active: var(--trial-color);
   --svg-fill-color: #534ce9;
   --ifm-footer-link-hover-color: #bcc7ef;
+  --svg-intro-background-color: #534ce9;
+  --svg-intro-fill-color: #fbfbfb;
 }
 
 html[data-theme="dark"] .admonition-heading {
@@ -93,6 +97,9 @@ html[data-theme="dark"] .table-of-contents__link {
 html[data-theme="dark"] .navbar__link:hover,
 html[data-theme="dark"] .navbar__link--active {
   color: var(--trial-color);
+}
+html[data-theme="dark"] .admonition-heading {
+  --ifm-heading-color: #000;
 }
 
 .react-toggle-track {
