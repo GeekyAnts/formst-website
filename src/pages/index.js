@@ -428,7 +428,10 @@ function Home() {
                   Get Started
                 </Link>
 
-                <a href="https://github.com/formstjs/formst">
+                <a
+                  href="https://github.com/formstjs/formst"
+                  class="noDecoration"
+                >
                   <div className="githubStarsConatiner">
                     <img
                       className="githubStarsImage"
