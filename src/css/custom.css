@@ -99,11 +99,6 @@ html[data-theme="dark"] .navbar__link--active {
   color: var(--trial-color);
 }
 
-.noDecoration {
-  text-decoration: none;
-  text-decoration-line: none;
-}
-
 .react-toggle-track {
   background-color: #000 !important;
 }

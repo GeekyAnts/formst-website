@@ -430,7 +430,7 @@ function Home() {
 
                 <a
                   href="https://github.com/formstjs/formst"
-                  class="noDecoration"
+                  style={{ textDecorationLine: "none" }}
                 >
                   <div className="githubStarsConatiner">
                     <img
