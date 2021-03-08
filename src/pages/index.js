@@ -411,7 +411,8 @@ function Home() {
                 <a
                   href="https://mobx-state-tree.js.org/intro/welcome"
                   target="__blank"
-                  class="text-white hover-text-white text-underline"
+                  class="text-white hover-text-white"
+                  style={{ fontWeight: 700 }}
                 >
                   MobX-State-Tree
                 </a>{" "}
