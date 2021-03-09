@@ -129,7 +129,7 @@ const SVGs = {
       xmlns="http://www.w3.org/2000/svg"
       width="96"
       height="95"
-      viewBox="0 0 96 80"
+      viewBox="0 0 96 95"
     >
       <g id="Group_74" data-name="Group 74" transform="translate(-50.5 11)">
         <rect
@@ -304,7 +304,15 @@ function Feature({ imageUrl, title, description }) {
   return (
     <div className={clsx("col col--3", styles.feature)}>
       {imgUrl && (
-        <div className="text--center " style={{ minHeight: "120px" }}>
+        <div
+          className="text--center "
+          style={{
+            minHeight: "120px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           {SVGs[title]}
         </div>
       )}
