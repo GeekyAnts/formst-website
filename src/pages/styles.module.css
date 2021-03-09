@@ -56,11 +56,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 860px;
+  max-width: 940px;
   margin-left: auto;
   margin-right: auto;
 }
 .contributorImage {
   border-radius: 100px;
   margin: 10px 13px;
+}
+
+.getStarted {
+  color: #534ce9 !important;
+  background-color: #ffffff !important;
 }
