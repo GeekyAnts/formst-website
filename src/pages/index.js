@@ -459,7 +459,7 @@ function Home() {
   return (
     <Layout
       title={`${siteConfig.title} | Model-driven Form Library for React`}
-      description="Model-driven Form Library for React"
+      description="Model-driven library for quickly building high-performance forms in React."
     >
       <Head>
         <meta
@@ -474,7 +474,7 @@ function Home() {
         />
         <meta
           name="description"
-          content="A JS library for quickly building high-performance forms in React."
+          content="Formst is a model-driven library for quickly building high-performance forms in React."
         />
         <meta property="og:site_name" content="Formst" />
         <meta name="twitter:image:alt" content="Formst JS Library" />
