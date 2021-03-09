@@ -520,12 +520,8 @@ function Home() {
 
                 <a
                   href="https://github.com/formstjs/formst"
-<<<<<<< HEAD
                   target="_blank"
                   style={{ textDecorationLine: "none" }}
-=======
-                  style={{ textDecorationLine: "none", paddingLeft: "10px" }}
->>>>>>> 3d829ef4d0dd8c7e3ce3e59511bea6314a82e44e
                 >
                   <div className="githubStarsConatiner">
                     <img
