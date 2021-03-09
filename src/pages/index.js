@@ -280,7 +280,7 @@ const features = [
   {
     title: "High-performance",
     imageUrl: "img/High.svg",
-    description: <> MST-based, making it fast and powerful. </>,
+    description: <> MST-based, making it fast and powerful</>,
   },
   {
     title: "Middleware",
@@ -384,13 +384,78 @@ function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   const [starCount, setStarCount] = React.useState(0);
+  const [contributors, setContributors] = React.useState([]);
+
+  function fetchOtherContributors() {
+    let vidhi = {
+      id: "47877976",
+      login: "vidhi499",
+      avatar_url: "https://avatars.githubusercontent.com/u/47877976?v=4",
+      html_url: "https://github.com/vidhi499",
+    };
+    let sanket = {
+      id: "1733433",
+      login: "sanketsahu",
+      avatar_url: "https://avatars.githubusercontent.com/u/1733433?v=4",
+      html_url: "https://github.com/sanketsahu",
+    };
+    let gaurav = {
+      id: "19682624",
+      login: "gauravguha",
+      avatar_url: "https://avatars.githubusercontent.com/u/19682624?v=4",
+      html_url: "https://github.com/gauravguha",
+    };
+    return [sanket, vidhi, gaurav];
+  }
+
+  function fetchContributorsData() {
+    let websiteContributors = fetch(
+      "https://api.github.com/repos/geekyants/formst-website/contributors"
+    );
+    let mainRepoContributors = fetch(
+      "https://api.github.com/repos/formstjs/formst/contributors"
+    );
+
+    Promise.all([websiteContributors, mainRepoContributors])
+      .then((values) => Promise.all(values.map((value) => value.json())))
+      .then((response) => {
+        let websiteContributorsResp = response[0];
+        let mainRepoContributorsResp = response[1];
+
+        for (var i = 0; i < websiteContributorsResp.length; i++) {
+          for (var j = 0; j < mainRepoContributorsResp.length; j++) {
+            if (
+              websiteContributorsResp[i].id === mainRepoContributorsResp[j].id
+            ) {
+              websiteContributorsResp[i].contributions +=
+                mainRepoContributorsResp[j].contributions;
+              mainRepoContributorsResp.splice(j, 1);
+            }
+          }
+        }
+        let contributors = websiteContributorsResp.concat(
+          mainRepoContributorsResp
+        );
+        contributors.sort(function (a, b) {
+          return b.contributions - a.contributions;
+        });
+        let otherContributors = fetchOtherContributors();
+        const contributorsIDs = new Set(contributors.map(({ id }) => id));
+        contributors = [
+          ...contributors,
+          ...otherContributors.filter(({ id }) => !contributorsIDs.has(id)),
+        ];
+        setContributors(contributors);
+      });
+  }
 
   React.useEffect(() => {
     fetch("https://api.github.com/repos/formstjs/formst")
       .then((response) => response.json())
       .then((data) => setStarCount(data.stargazers_count));
-  }, []);
 
+    fetchContributorsData();
+  }, []);
   return (
     <Layout
       title={`${siteConfig.title} | Model-driven Form Library for React`}
@@ -405,6 +470,10 @@ function Home() {
         <meta property="og:title" content="Formst" />
         <meta
           property="og:description"
+          content="A JS library for quickly building high-performance forms in React."
+        />
+        <meta
+          name="description"
           content="A JS library for quickly building high-performance forms in React."
         />
         <meta property="og:site_name" content="Formst" />
@@ -441,7 +510,8 @@ function Home() {
               <div className={styles.buttons}>
                 <Link
                   className={clsx(
-                    "button button--lg button--outline button--secondary "
+                    "button button--lg  button--secondary ",
+                    styles.getStarted
                   )}
                   to={useBaseUrl("docs/")}
                 >
@@ -466,8 +536,7 @@ function Home() {
                 </a>
               </div>
             </div>
-            {/* <div className="col col--1 hero-image"></div> */}
-            <div className="col col-lg-5 hero-image">{introSvg}</div>
+            <div className="col col--5 hero-image">{introSvg}</div>
           </div>
         </div>
       </header>
@@ -493,9 +562,9 @@ function Home() {
               <div className={styles.exampleDescription}>
                 <p>
                   Let's take a quick look at Formst in action. This is a simple
-                  login form with two inputs that are validated on submission
-                  and it can display specific error messages for invalid input
-                  values. It's this easy.
+                  login form with two inputs that are validated on submission.
+                  It can also display specific error messages for invalid input
+                  values.
                 </p>
               </div>
             </div>
@@ -509,6 +578,35 @@ function Home() {
               allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
               sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
             ></iframe>
+          </div>
+        </section>
+        <section className={styles.creatorSection}>
+          <div className="container text--center">
+            <div className={styles.exampleWrapper}>
+              <h3 className="hero__title">Meet the Creators</h3>
+            </div>
+            <ul className={styles.contributorList}>
+              {contributors.map((contributor, idx) => (
+                <a href={contributor.html_url}>
+                  <img
+                    alt={contributor.login}
+                    src={contributor.avatar_url}
+                    loading="lazy"
+                    height="114px"
+                    className={styles.contributorImage}
+                  ></img>
+                </a>
+              ))}
+              {/* <a href="https://github.com/vidhi499">
+                <img
+                  alt={contributor.html_url}
+                  src="https://avatars.githubusercontent.com/u/47877976?s=400&v=4"
+                  loading="lazy"
+                  height="114px"
+                  className={styles.contributorImage}
+                ></img>
+              </a> */}
+            </ul>
           </div>
         </section>
       </main>
