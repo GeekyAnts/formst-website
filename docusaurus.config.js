@@ -6,6 +6,7 @@ module.exports = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon-light.png",
+  ogImage: "/img/favicon-dark.png",
   organizationName: "geekyants", // Usually your GitHub org/user name.
   projectName: "formst", // Usually your repo name.
   themeConfig: {
