@@ -269,7 +269,7 @@ const features = [
   {
     title: "High-performance",
     imageUrl: "img/High.svg",
-    description: <> MST-based, making it fast and powerful. </>,
+    description: <> MST-based, making it fast and powerful</>,
   },
   {
     title: "Middleware",
@@ -425,6 +425,10 @@ function Home() {
           property="og:description"
           content="A JS library for quickly building high-performance forms in React."
         />
+        <meta
+          name="description"
+          content="A JS library for quickly building high-performance forms in React."
+        />
         <meta property="og:site_name" content="Formst" />
         <meta name="twitter:image:alt" content="Formst JS Library" />
         <meta
@@ -507,9 +511,9 @@ function Home() {
               <div className={styles.exampleDescription}>
                 <p>
                   Let's take a quick look at Formst in action. This is a simple
-                  login form with two inputs that are validated on submission
-                  and it can display specific error messages for invalid input
-                  values. It's this easy.
+                  login form with two inputs that are validated on submission.
+                  It can also display specific error messages for invalid input
+                  values.
                 </p>
               </div>
             </div>
@@ -523,6 +527,26 @@ function Home() {
               allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
               sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
             ></iframe>
+          </div>
+        </section>
+        <section className={styles.creatorSection}>
+          <div className="container text--center">
+            <div className={styles.exampleWrapper}>
+              <h3 className="hero__title">Meet the Creators</h3>
+            </div>
+            <ul className={styles.contributorList}>
+              {contributors.map((contributor, idx) => (
+                <a href={contributor.html_url}>
+                  <img
+                    alt={contributor.html_url}
+                    src={contributor.avatar_url}
+                    loading="lazy"
+                    height="114px"
+                    className={styles.contributorImage}
+                  ></img>
+                </a>
+              ))}
+            </ul>
           </div>
         </section>
       </main>
