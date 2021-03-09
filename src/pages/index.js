@@ -498,7 +498,11 @@ function Home() {
                   Get Started
                 </Link>
 
-                <a href="https://github.com/formstjs/formst">
+                <a
+                  href="https://github.com/formstjs/formst"
+                  target="_blank"
+                  style={{ textDecorationLine: "none" }}
+                >
                   <div className="githubStarsConatiner">
                     <img
                       className="githubStarsImage"
@@ -563,7 +567,7 @@ function Home() {
             </div>
             <ul className={styles.contributorList}>
               {contributors.map((contributor, idx) => (
-                <a href={contributor.html_url}>
+                <a href={contributor.html_url} target="_blank">
                   <img
                     alt={contributor.login}
                     src={contributor.avatar_url}
@@ -573,15 +577,6 @@ function Home() {
                   ></img>
                 </a>
               ))}
-              {/* <a href="https://github.com/vidhi499">
-                <img
-                  alt={contributor.html_url}
-                  src="https://avatars.githubusercontent.com/u/47877976?s=400&v=4"
-                  loading="lazy"
-                  height="114px"
-                  className={styles.contributorImage}
-                ></img>
-              </a> */}
             </ul>
           </div>
         </section>
