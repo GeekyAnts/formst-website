@@ -61,7 +61,7 @@ const SVGs = {
         data-name="Shape"
         d="M.584,20.417a1.994,1.994,0,0,1-.5-1.984c.659-2.2,4.08-13.325,6.763-16.007A8.293,8.293,0,0,1,18.576,14.153c-2.682,2.679-13.8,6.108-16.008,6.767A2.14,2.14,0,0,1,2,21,2,2,0,0,1,.584,20.417Z"
         transform="translate(22 38)"
-        fill="#534ce9"
+        fill="#5650d8"
       />
     </svg>
   ),
@@ -69,27 +69,27 @@ const SVGs = {
     <svg
       id="outofbox"
       xmlns="http://www.w3.org/2000/svg"
-      width="97"
-      height="97"
-      viewBox="0 0 97 97"
+      width="95"
+      height="95"
+      viewBox="0 0 95 95"
     >
       <path
         id="Shape"
         d="M18.578,68a3.056,3.056,0,0,1-3.062-3.05V55.166A29.307,29.307,0,0,1,29.5,0,29.355,29.355,0,0,1,43.485,55.242V64.95A3.055,3.055,0,0,1,40.423,68Z"
-        transform="translate(18 20)"
+        transform="translate(17.053 18)"
         fill="#b1ade3"
       />
       <path
         id="Path"
         d="M20.923,0H3.077A3.039,3.039,0,0,0,0,3,3.039,3.039,0,0,0,3.077,6H20.923A3.039,3.039,0,0,0,24,3,3.039,3.039,0,0,0,20.923,0Z"
-        transform="translate(37 91)"
-        fill="#534ce9"
+        transform="translate(35.014 89)"
+        fill="#5650d8"
       />
       <rect
         id="Rectangle"
         width="6"
         height="13"
-        transform="translate(46)"
+        transform="translate(44.989)"
         fill="#b1ade3"
       />
       <rect
@@ -97,14 +97,15 @@ const SVGs = {
         data-name="Rectangle"
         width="13"
         height="6"
-        transform="translate(0 46)"
+        transform="translate(0 44.989)"
         fill="#b1ade3"
       />
-      <path
+      <rect
         id="Rectangle-3"
         data-name="Rectangle"
-        d="M0,0H13V6H0Z"
-        transform="translate(84 46)"
+        width="13"
+        height="6"
+        transform="translate(82 44.989)"
         fill="#b1ade3"
       />
       <path
@@ -118,7 +119,7 @@ const SVGs = {
         id="Rectangle-5"
         data-name="Rectangle"
         d="M0,0,12.941.025l.012,6.2L.012,6.2Z"
-        transform="translate(71.281 21.02) rotate(-44.676)"
+        transform="translate(69.281 21.02) rotate(-44.676)"
         fill="#b1ade3"
       />
     </svg>
@@ -126,46 +127,56 @@ const SVGs = {
   "Easy on the bundle": (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="97"
-      height="81"
-      viewBox="0 0 97 81"
+      width="96"
+      height="95"
+      viewBox="0 0 96 95"
     >
-      <g id="bundle" transform="translate(0.5 0.5)">
-        <path
-          id="Path"
-          d="M86,71H78a1.972,1.972,0,1,1,0-3.944h8a5.966,5.966,0,0,0,6-5.917V17.75a5.966,5.966,0,0,0-6-5.917H40a2.029,2.029,0,0,1-1.416-.576L31.172,3.944H10A5.966,5.966,0,0,0,4,9.861V61.139a5.966,5.966,0,0,0,6,5.917h8A1.972,1.972,0,1,1,18,71H10A9.943,9.943,0,0,1,0,61.139V9.861A9.943,9.943,0,0,1,10,0H32a2.029,2.029,0,0,1,1.416.576l7.412,7.313H86A9.943,9.943,0,0,1,96,17.75V61.139A9.943,9.943,0,0,1,86,71Z"
-          fill="#b1ade3"
-          stroke="#b1ade3"
-          stroke-miterlimit="10"
-          stroke-width="1"
+      <g id="Group_74" data-name="Group 74" transform="translate(-50.5 11)">
+        <rect
+          id="Rectangle_8"
+          data-name="Rectangle 8"
+          width="95"
+          height="95"
+          transform="translate(51 -11)"
+          fill="none"
         />
-        <path
-          id="Path-2"
-          data-name="Path"
-          d="M1.5,35C.672,35,0,34.1,0,33V2C0,.9.672,0,1.5,0S3,.9,3,2V33C3,34.108,2.328,35,1.5,35Z"
-          transform="translate(47 32)"
-          fill="#b1ade3"
-          stroke="#b1ade3"
-          stroke-width="1"
-        />
-        <path
-          id="Path-3"
-          data-name="Path"
-          d="M12,14a2.009,2.009,0,0,1-1.416-.584l-10-10A2,2,0,0,1,3.413.585L12,9.171,20.587.585a2,2,0,0,1,2.828,2.829l-10,10A1.993,1.993,0,0,1,12,14Z"
-          transform="translate(37 54)"
-          fill="#b1ade3"
-          stroke="#b1ade3"
-          stroke-width="1"
-        />
-        <path
-          id="Path-4"
-          data-name="Path"
-          d="M34,15H6A5.829,5.829,0,0,1,0,9.375v-7.5A1.941,1.941,0,0,1,2,0,1.941,1.941,0,0,1,4,1.875v7.5A1.944,1.944,0,0,0,6,11.25H34a1.944,1.944,0,0,0,2-1.875v-7.5a2,2,0,0,1,4,0v7.5A5.829,5.829,0,0,1,34,15Z"
-          transform="translate(28 65)"
-          fill="#534ce9"
-          stroke="#b1ade3"
-          stroke-width="1"
-        />
+        <g id="bundle" transform="translate(51 -3)">
+          <path
+            id="Path"
+            d="M85.1,70.167H77.188a1.949,1.949,0,1,1,0-3.9H85.1a5.9,5.9,0,0,0,5.938-5.847V17.542A5.9,5.9,0,0,0,85.1,11.694H39.583a2.009,2.009,0,0,1-1.4-.569L30.847,3.9H9.9A5.9,5.9,0,0,0,3.958,9.745V60.421A5.9,5.9,0,0,0,9.9,66.269h7.917a1.949,1.949,0,1,1,0,3.9H9.9A9.833,9.833,0,0,1,0,60.421V9.745A9.833,9.833,0,0,1,9.9,0H31.667a2.009,2.009,0,0,1,1.4.569L40.4,7.8H85.1A9.833,9.833,0,0,1,95,17.542v42.88A9.833,9.833,0,0,1,85.1,70.167Z"
+            fill="#b1ade3"
+            stroke="#b1ade3"
+            strokeMiterlimit="10"
+            strokeWidth="1"
+          />
+          <path
+            id="Path-2"
+            data-name="Path"
+            d="M1.5,35C.672,35,0,34.1,0,33V2C0,.9.672,0,1.5,0S3,.9,3,2V33C3,34.108,2.328,35,1.5,35Z"
+            transform="translate(46.495 31.407)"
+            fill="#b1ade3"
+            stroke="rgba(0,0,0,0)"
+            strokeWidth="1"
+          />
+          <path
+            id="Path-3"
+            data-name="Path"
+            d="M12,14a2.009,2.009,0,0,1-1.416-.584l-10-10A2,2,0,0,1,3.413.585L12,9.171,20.587.585a2,2,0,0,1,2.828,2.829l-10,10A1.993,1.993,0,0,1,12,14Z"
+            transform="translate(36.486 53.318)"
+            fill="#b1ade3"
+            stroke="rgba(0,0,0,0)"
+            strokeWidth="1"
+          />
+          <path
+            id="Path-4"
+            data-name="Path"
+            d="M34,15H6A5.829,5.829,0,0,1,0,9.375v-7.5A1.941,1.941,0,0,1,2,0,1.941,1.941,0,0,1,4,1.875v7.5A1.944,1.944,0,0,0,6,11.25H34a1.944,1.944,0,0,0,2-1.875v-7.5a2,2,0,0,1,4,0v7.5A5.829,5.829,0,0,1,34,15Z"
+            transform="translate(27.5 64.167)"
+            fill="#5650d8"
+            stroke="rgba(0,0,0,0)"
+            strokeWidth="1"
+          />
+        </g>
       </g>
     </svg>
   ),
@@ -173,43 +184,14 @@ const SVGs = {
     <svg
       id="middle"
       xmlns="http://www.w3.org/2000/svg"
-      width="93"
-      height="92"
-      viewBox="0 0 93 92"
+      width="95"
+      height="95"
+      viewBox="0 0 95 95"
     >
       <path
         id="Rectangle"
         d="M0,0,6.1.012l.023,11.9L.023,11.9Z"
-        transform="translate(59.191 49.457) rotate(-65.19)"
-        fill="#b1ade3"
-      />
-      <path
-        id="Rectangle-2"
-        data-name="Rectangle"
-        d="M0,0,14.542.026l.011,6.1L.011,6.1Z"
-        transform="matrix(0.926, -0.379, 0.379, 0.926, 20.856, 48.042)"
-        fill="#b1ade3"
-      />
-      <path
-        id="Rectangle-3"
-        data-name="Rectangle"
-        d="M0,0,12.752.031l.015,6.1L.015,6.1Z"
-        transform="matrix(0.807, -0.591, 0.591, 0.807, 55.505, 26.983)"
-        fill="#b1ade3"
-      />
-      <path
-        id="Rectangle-4"
-        data-name="Rectangle"
-        d="M0,0,6.109.015,6.138,11.5.029,11.488Z"
-        transform="matrix(0.77, -0.638, 0.638, 0.77, 30.167, 21.838)"
-        fill="#b1ade3"
-      />
-      <rect
-        id="Rectangle-5"
-        data-name="Rectangle"
-        width="6.124"
-        height="18.482"
-        transform="translate(44.664 53.377) rotate(-1.576)"
+        transform="translate(60.677 49.983) rotate(-65.19)"
         fill="#b1ade3"
       />
       <path
@@ -222,35 +204,64 @@ const SVGs = {
         id="Shape-2"
         data-name="Shape"
         d="M0,13.5A13.5,13.5,0,1,1,13.5,27,13.514,13.514,0,0,1,0,13.5Z"
-        transform="translate(63 2)"
+        transform="translate(65 2)"
         fill="#b1ade3"
       />
       <path
         id="Shape-3"
         data-name="Shape"
         d="M0,13.5A13.5,13.5,0,1,1,13.5,27,13.514,13.514,0,0,1,0,13.5Z"
-        transform="translate(0 40)"
+        transform="translate(0 40.597)"
         fill="#b1ade3"
       />
       <path
         id="Shape-4"
         data-name="Shape"
         d="M0,13.5A13.5,13.5,0,1,1,13.5,27,13.514,13.514,0,0,1,0,13.5Z"
-        transform="translate(35 65)"
+        transform="translate(37.091 68)"
         fill="#b1ade3"
       />
       <path
         id="Shape-5"
         data-name="Shape"
         d="M0,13.5A13.5,13.5,0,1,1,13.5,27,13.515,13.515,0,0,1,0,13.5Z"
-        transform="translate(66 43)"
+        transform="translate(68 43.642)"
+        fill="#b1ade3"
+      />
+      <path
+        id="Rectangle-2"
+        data-name="Rectangle"
+        d="M0,0,14.542.026l.011,6.1L.011,6.1Z"
+        transform="matrix(0.926, -0.379, 0.379, 0.926, 21.396, 48.556)"
+        fill="#b1ade3"
+      />
+      <rect
+        id="Rectangle-3"
+        data-name="Rectangle"
+        width="6.124"
+        height="18.482"
+        transform="translate(45.699 54.083) rotate(-1.576)"
+        fill="#b1ade3"
+      />
+      <path
+        id="Rectangle-4"
+        data-name="Rectangle"
+        d="M0,0,12.752.031l.015,6.1L.015,6.1Z"
+        transform="matrix(0.807, -0.591, 0.591, 0.807, 56.909, 27.222)"
+        fill="#b1ade3"
+      />
+      <path
+        id="Rectangle-5"
+        data-name="Rectangle"
+        d="M0,0,6.109.015,6.138,11.5.029,11.488Z"
+        transform="matrix(0.77, -0.638, 0.638, 0.77, 30.912, 22.059)"
         fill="#b1ade3"
       />
       <path
         id="Shape-6"
         data-name="Shape"
         d="M0,17A16.775,16.775,0,0,1,16.5,0,16.775,16.775,0,0,1,33,17,16.775,16.775,0,0,1,16.5,34,16.775,16.775,0,0,1,0,17Z"
-        transform="translate(32 23)"
+        transform="translate(33.067 23.383)"
         fill="#b1ade3"
       />
       <circle
@@ -258,8 +269,8 @@ const SVGs = {
         cx="6.5"
         cy="6.5"
         r="6.5"
-        transform="translate(42 34)"
-        fill="#534ce9"
+        transform="translate(43.05 34.42)"
+        fill="#5650d8"
       />
     </svg>
   ),
@@ -293,7 +304,15 @@ function Feature({ imageUrl, title, description }) {
   return (
     <div className={clsx("col col--3", styles.feature)}>
       {imgUrl && (
-        <div className="text--center " style={{ minHeight: "120px" }}>
+        <div
+          className="text--center "
+          style={{
+            minHeight: "120px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           {SVGs[title]}
         </div>
       )}
@@ -308,8 +327,9 @@ function Feature({ imageUrl, title, description }) {
 const introSvg = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="350"
-    height="350"
+    width="350px"
+    height="350px"
+    className={styles.introImg}
     viewBox="0 0 784 784"
   >
     <g
@@ -467,7 +487,7 @@ function Home() {
           content="https://formst.geekyants.com/img/og-icon.png"
         ></meta>
       </Head>
-      <header className={clsx("hero hero--primary", styles.heroBanner)}>
+      <header className={clsx("hero hero--primary ", styles.heroBanner)}>
         <div className="container">
           <div className="row">
             <div className="col col--7 ">
@@ -500,11 +520,16 @@ function Home() {
 
                 <a
                   href="https://github.com/formstjs/formst"
+<<<<<<< HEAD
                   target="_blank"
                   style={{ textDecorationLine: "none" }}
+=======
+                  style={{ textDecorationLine: "none", paddingLeft: "10px" }}
+>>>>>>> 3d829ef4d0dd8c7e3ce3e59511bea6314a82e44e
                 >
                   <div className="githubStarsConatiner">
                     <img
+                      alt="Github"
                       className="githubStarsImage"
                       src="/img/github_logo.png"
                     ></img>

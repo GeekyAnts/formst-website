@@ -98,9 +98,6 @@ html[data-theme="dark"] .navbar__link:hover,
 html[data-theme="dark"] .navbar__link--active {
   color: var(--trial-color);
 }
-html[data-theme="dark"] .admonition-heading {
-  --ifm-heading-color: #000;
-}
 
 .react-toggle-track {
   background-color: #000 !important;
