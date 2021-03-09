@@ -146,8 +146,8 @@ const SVGs = {
             d="M85.1,70.167H77.188a1.949,1.949,0,1,1,0-3.9H85.1a5.9,5.9,0,0,0,5.938-5.847V17.542A5.9,5.9,0,0,0,85.1,11.694H39.583a2.009,2.009,0,0,1-1.4-.569L30.847,3.9H9.9A5.9,5.9,0,0,0,3.958,9.745V60.421A5.9,5.9,0,0,0,9.9,66.269h7.917a1.949,1.949,0,1,1,0,3.9H9.9A9.833,9.833,0,0,1,0,60.421V9.745A9.833,9.833,0,0,1,9.9,0H31.667a2.009,2.009,0,0,1,1.4.569L40.4,7.8H85.1A9.833,9.833,0,0,1,95,17.542v42.88A9.833,9.833,0,0,1,85.1,70.167Z"
             fill="#b1ade3"
             stroke="#b1ade3"
-            stroke-miterlimit="10"
-            stroke-width="1"
+            strokeMiterlimit="10"
+            strokeWidth="1"
           />
           <path
             id="Path-2"
@@ -156,7 +156,7 @@ const SVGs = {
             transform="translate(46.495 31.407)"
             fill="#b1ade3"
             stroke="rgba(0,0,0,0)"
-            stroke-width="1"
+            strokeWidth="1"
           />
           <path
             id="Path-3"
@@ -165,7 +165,7 @@ const SVGs = {
             transform="translate(36.486 53.318)"
             fill="#b1ade3"
             stroke="rgba(0,0,0,0)"
-            stroke-width="1"
+            strokeWidth="1"
           />
           <path
             id="Path-4"
@@ -174,7 +174,7 @@ const SVGs = {
             transform="translate(27.5 64.167)"
             fill="#5650d8"
             stroke="rgba(0,0,0,0)"
-            stroke-width="1"
+            strokeWidth="1"
           />
         </g>
       </g>
@@ -327,8 +327,9 @@ function Feature({ imageUrl, title, description }) {
 const introSvg = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="350"
-    height="350"
+    width="350px"
+    height="350px"
+    className={styles.introImg}
     viewBox="0 0 784 784"
   >
     <g
@@ -486,7 +487,7 @@ function Home() {
           content="https://formst.geekyants.com/img/og-icon.png"
         ></meta>
       </Head>
-      <header className={clsx("hero hero--primary", styles.heroBanner)}>
+      <header className={clsx("hero hero--primary ", styles.heroBanner)}>
         <div className="container">
           <div className="row">
             <div className="col col--7 ">
@@ -519,10 +520,11 @@ function Home() {
 
                 <a
                   href="https://github.com/formstjs/formst"
-                  style={{ textDecorationLine: "none" }}
+                  style={{ textDecorationLine: "none", paddingLeft: "10px" }}
                 >
                   <div className="githubStarsConatiner">
                     <img
+                      alt="Github"
                       className="githubStarsImage"
                       src="/img/github_logo.png"
                     ></img>
