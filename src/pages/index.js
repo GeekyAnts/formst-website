@@ -366,6 +366,28 @@ function Home() {
   const [starCount, setStarCount] = React.useState(0);
   const [contributors, setContributors] = React.useState([]);
 
+  function fetchOtherContributors() {
+    let vidhi = {
+      id: "47877976",
+      login: "vidhi499",
+      avatar_url: "https://avatars.githubusercontent.com/u/47877976?v=4",
+      html_url: "https://github.com/vidhi499",
+    };
+    let sanket = {
+      id: "1733433",
+      login: "sanketsahu",
+      avatar_url: "https://avatars.githubusercontent.com/u/1733433?v=4",
+      html_url: "https://github.com/sanketsahu",
+    };
+    let gaurav = {
+      id: "19682624",
+      login: "gauravguha",
+      avatar_url: "https://avatars.githubusercontent.com/u/19682624?v=4",
+      html_url: "https://github.com/gauravguha",
+    };
+    return [sanket, vidhi, gaurav];
+  }
+
   function fetchContributorsData() {
     let websiteContributors = fetch(
       "https://api.github.com/repos/geekyants/formst-website/contributors"
@@ -397,7 +419,12 @@ function Home() {
         contributors.sort(function (a, b) {
           return b.contributions - a.contributions;
         });
-        console.log({ contributors });
+        let otherContributors = fetchOtherContributors();
+        const contributorsIDs = new Set(contributors.map(({ id }) => id));
+        contributors = [
+          ...contributors,
+          ...otherContributors.filter(({ id }) => !contributorsIDs.has(id)),
+        ];
         setContributors(contributors);
       });
   }
@@ -448,12 +475,12 @@ function Home() {
                 Model-driven Form Library <br />
                 for React
               </h1>
-              <p class="hero__subtitle hero__subtitle--left">
+              <p className="hero__subtitle hero__subtitle--left">
                 Based on{" "}
                 <a
                   href="https://mobx-state-tree.js.org/intro/welcome"
                   target="__blank"
-                  class="text-white hover-text-white"
+                  className="text-white hover-text-white"
                   style={{ fontWeight: 700 }}
                 >
                   MobX-State-Tree
@@ -484,7 +511,6 @@ function Home() {
                 </a>
               </div>
             </div>
-            {/* <div className="col col--1 hero-image"></div> */}
             <div className="col col--5 hero-image">{introSvg}</div>
           </div>
         </div>
@@ -538,7 +564,7 @@ function Home() {
               {contributors.map((contributor, idx) => (
                 <a href={contributor.html_url}>
                   <img
-                    alt={contributor.html_url}
+                    alt={contributor.login}
                     src={contributor.avatar_url}
                     loading="lazy"
                     height="114px"
@@ -546,6 +572,15 @@ function Home() {
                   ></img>
                 </a>
               ))}
+              {/* <a href="https://github.com/vidhi499">
+                <img
+                  alt={contributor.html_url}
+                  src="https://avatars.githubusercontent.com/u/47877976?s=400&v=4"
+                  loading="lazy"
+                  height="114px"
+                  className={styles.contributorImage}
+                ></img>
+              </a> */}
             </ul>
           </div>
         </section>
