@@ -15,7 +15,7 @@ While working on a recent project, [GeekyAnts](https://geekyants.com) devs reali
 
 So, we decided to take matters into our own hands. We built a library based on MST that includes commonly used functionalities required in any form, such as validations and pre-processing.
 
-                         **Introducing Formst: A Model-driven Form Library forReact 🙌🏼**
+<p align="center" style={{fontWeight:700}}>Introducing Formst: A Model-driven Form Library for React 🙌🏼</p>
 
 ## Philosophy
 
