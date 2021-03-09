@@ -400,7 +400,6 @@ function Home() {
           name="keywords"
           content="React, JavaScript, Open Source, OSS, JS Library, Form, Forms, MST, MobX-State-Tree, Flat Form, Stepper Form, Nested Form"
         />
-        <meta name="robots" content="noindex" />
         <meta property="og:url" content="https://formst.geekyants.com/" />
         <meta property="og:title" content="Formst" />
         <meta
