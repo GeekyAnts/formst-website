@@ -388,19 +388,19 @@ function Home() {
 
   function fetchOtherContributors() {
     let vidhi = {
-      id: "47877976",
+      id: 47877976,
       login: "vidhi499",
       avatar_url: "https://avatars.githubusercontent.com/u/47877976?v=4",
       html_url: "https://github.com/vidhi499",
     };
     let sanket = {
-      id: "1733433",
+      id: 1733433,
       login: "sanketsahu",
       avatar_url: "https://avatars.githubusercontent.com/u/1733433?v=4",
       html_url: "https://github.com/sanketsahu",
     };
     let gaurav = {
-      id: "19682624",
+      id: 19682624,
       login: "gauravguha",
       avatar_url: "https://avatars.githubusercontent.com/u/19682624?v=4",
       html_url: "https://github.com/gauravguha",
@@ -433,18 +433,24 @@ function Home() {
             }
           }
         }
+
         let contributors = websiteContributorsResp.concat(
           mainRepoContributorsResp
         );
+
         contributors.sort(function (a, b) {
           return b.contributions - a.contributions;
         });
         let otherContributors = fetchOtherContributors();
-        const contributorsIDs = new Set(contributors.map(({ id }) => id));
-        contributors = [
-          ...contributors,
-          ...otherContributors.filter(({ id }) => !contributorsIDs.has(id)),
-        ];
+        otherContributors.map((contributor) => {
+          let duplicate = contributors.find((gitContributor) => {
+            return gitContributor.id === contributor.id;
+          });
+
+          if (!duplicate) {
+            contributors.push(contributor);
+          }
+        });
         setContributors(contributors);
       });
   }
@@ -588,7 +594,11 @@ function Home() {
             </div>
             <ul className={styles.contributorList}>
               {contributors.map((contributor, idx) => (
-                <a href={contributor.html_url} target="_blank">
+                <a
+                  key={contributor.id}
+                  href={contributor.html_url}
+                  target="_blank"
+                >
                   <img
                     alt={contributor.login}
                     src={contributor.avatar_url}
