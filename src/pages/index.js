@@ -327,8 +327,9 @@ function Feature({ imageUrl, title, description }) {
 const introSvg = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="350"
-    height="350"
+    width="350px"
+    height="350px"
+    className={styles.introImg}
     viewBox="0 0 784 784"
   >
     <g
@@ -417,7 +418,7 @@ function Home() {
           content="https://formst.geekyants.com/img/og-icon.png"
         ></meta>
       </Head>
-      <header className={clsx("hero hero--primary", styles.heroBanner)}>
+      <header className={clsx("hero hero--primary ", styles.heroBanner)}>
         <div className="container">
           <div className="row">
             <div className="col col--7 ">
@@ -449,7 +450,7 @@ function Home() {
 
                 <a
                   href="https://github.com/formstjs/formst"
-                  style={{ textDecorationLine: "none" }}
+                  style={{ textDecorationLine: "none", paddingLeft: "10px" }}
                 >
                   <div className="githubStarsConatiner">
                     <img
@@ -466,7 +467,7 @@ function Home() {
               </div>
             </div>
             {/* <div className="col col--1 hero-image"></div> */}
-            <div className="col col--5 hero-image">{introSvg}</div>
+            <div className="col col-lg-5 hero-image">{introSvg}</div>
           </div>
         </div>
       </header>
