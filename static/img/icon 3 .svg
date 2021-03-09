@@ -1,0 +1,9 @@
+<svg id="outofbox" xmlns="http://www.w3.org/2000/svg" width="95" height="95" viewBox="0 0 95 95">
+  <path id="Shape" d="M18.578,68a3.056,3.056,0,0,1-3.062-3.05V55.166A29.307,29.307,0,0,1,29.5,0,29.355,29.355,0,0,1,43.485,55.242V64.95A3.055,3.055,0,0,1,40.423,68Z" transform="translate(17.053 18)" fill="#b1ade3"/>
+  <path id="Path" d="M20.923,0H3.077A3.039,3.039,0,0,0,0,3,3.039,3.039,0,0,0,3.077,6H20.923A3.039,3.039,0,0,0,24,3,3.039,3.039,0,0,0,20.923,0Z" transform="translate(35.014 89)" fill="#5650d8"/>
+  <rect id="Rectangle" width="6" height="13" transform="translate(44.989)" fill="#b1ade3"/>
+  <rect id="Rectangle-2" data-name="Rectangle" width="13" height="6" transform="translate(0 44.989)" fill="#b1ade3"/>
+  <rect id="Rectangle-3" data-name="Rectangle" width="13" height="6" transform="translate(82 44.989)" fill="#b1ade3"/>
+  <path id="Rectangle-4" data-name="Rectangle" d="M0,0,6.2.012l.025,12.941-6.2-.012Z" transform="translate(12.128 16.339) rotate(-45.324)" fill="#b1ade3"/>
+  <path id="Rectangle-5" data-name="Rectangle" d="M0,0,12.941.025l.012,6.2L.012,6.2Z" transform="translate(69.281 21.02) rotate(-44.676)" fill="#b1ade3"/>
+</svg>
