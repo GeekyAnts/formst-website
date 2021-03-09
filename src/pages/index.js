@@ -364,13 +364,51 @@ function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   const [starCount, setStarCount] = React.useState(0);
+  const [contributors, setContributors] = React.useState([]);
+
+  function fetchContributorsData() {
+    let websiteContributors = fetch(
+      "https://api.github.com/repos/geekyants/formst-website/contributors"
+    );
+    let mainRepoContributors = fetch(
+      "https://api.github.com/repos/formstjs/formst/contributors"
+    );
+
+    Promise.all([websiteContributors, mainRepoContributors])
+      .then((values) => Promise.all(values.map((value) => value.json())))
+      .then((response) => {
+        let websiteContributorsResp = response[0];
+        let mainRepoContributorsResp = response[1];
+
+        for (var i = 0; i < websiteContributorsResp.length; i++) {
+          for (var j = 0; j < mainRepoContributorsResp.length; j++) {
+            if (
+              websiteContributorsResp[i].id === mainRepoContributorsResp[j].id
+            ) {
+              websiteContributorsResp[i].contributions +=
+                mainRepoContributorsResp[j].contributions;
+              mainRepoContributorsResp.splice(j, 1);
+            }
+          }
+        }
+        let contributors = websiteContributorsResp.concat(
+          mainRepoContributorsResp
+        );
+        contributors.sort(function (a, b) {
+          return b.contributions - a.contributions;
+        });
+        console.log({ contributors });
+        setContributors(contributors);
+      });
+  }
 
   React.useEffect(() => {
     fetch("https://api.github.com/repos/formstjs/formst")
       .then((response) => response.json())
       .then((data) => setStarCount(data.stargazers_count));
-  }, []);
 
+    fetchContributorsData();
+  }, []);
   return (
     <Layout
       title={`${siteConfig.title} | Model-driven Form Library for React`}
