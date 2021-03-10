@@ -587,6 +587,25 @@ function Home() {
             ></iframe>
           </div>
         </section>
+        <section className={styles.talkSection}>
+          <div className="container text--center">
+            <div className={styles.exampleWrapper}>
+              <h3 className="hero__title">
+                Watch the talk at React Native Bangalore
+              </h3>
+            </div>
+
+            <iframe
+              width="80%"
+              height="600"
+              className={styles.talkVideo}
+              src="https://www.youtube.com/embed/339nm9QyHWc?start=5119"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
         <section className={styles.creatorSection}>
           <div className="container text--center">
             <div className={styles.exampleWrapper}>
