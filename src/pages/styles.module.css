@@ -85,4 +85,8 @@
   .exampleWrapper {
     padding-bottom: 1rem;
   }
+
+  .getStarted {
+    font-size: 14px;
+  }
 }
