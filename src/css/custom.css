@@ -89,7 +89,12 @@ html[data-theme="dark"] {
 html[data-theme="dark"] .admonition-heading {
   --ifm-heading-color: #000;
 }
-
+html[data-theme="dark"] .product {
+  color: white;
+}
+.product {
+  color: black;
+}
 html[data-theme="dark"] .table-of-contents__link {
   --ifm-color-primary: var(--trial-color);
 }
