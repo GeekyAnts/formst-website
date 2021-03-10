@@ -476,11 +476,11 @@ function Home() {
         <meta property="og:title" content="Formst" />
         <meta
           property="og:description"
-          content="Model-driven Form Library for React."
+          content="Based on MobX-State-Tree to validate and structure forms in React"
         />
         <meta
           name="description"
-          content="Model-driven Form Library for React."
+          content="Based on MobX-State-Tree to validate and structure forms in React"
         />
         <meta property="og:site_name" content="Formst" />
         <meta name="twitter:image:alt" content="Formst Library" />
