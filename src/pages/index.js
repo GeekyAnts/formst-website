@@ -476,7 +476,7 @@ function Home() {
         <meta property="og:title" content="Formst" />
         <meta
           property="og:description"
-          content="Formst is a model-driven library for quickly building high-performance forms in React."
+          content="Model-driven Form Library for React."
         />
         <meta
           name="description"
