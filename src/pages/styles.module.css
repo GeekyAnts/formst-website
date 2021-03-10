@@ -32,6 +32,12 @@
   width: 100%;
 }
 
+.products {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5rem;
+  width: 100%;
+}
 .featureImage {
   height: 100px;
   width: 100px;
@@ -79,7 +85,7 @@
 
   .talkVideo {
     width: 100%;
-    height: 200px;
+    height: 300px;
   }
 
   .exampleWrapper {
