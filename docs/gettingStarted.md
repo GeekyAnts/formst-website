@@ -30,17 +30,13 @@ npm add formst
    ```tsx
    const TodoForm = createFormModel(
      "TodoForm",
-
      {
        title: types.string,
-
        description: types.string,
      },
-
      {
        validation: {
          title: ["required"],
-
          description: "required",
        },
      }
