@@ -153,6 +153,13 @@ html[data-theme="dark"] .navbar__link--active {
   .feature_section_padding {
     padding-bottom: 1rem !important;
   }
+  .githubStarsText {
+    font-size: 18px;
+  }
+  .githubStarsImage {
+    width: 30px !important;
+    height: 30px !important;
+  }
 }
 .githubStarsConatiner {
   height: 50px;
