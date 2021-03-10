@@ -480,10 +480,10 @@ function Home() {
         />
         <meta
           name="description"
-          content="Formst is a model-driven library for quickly building high-performance forms in React."
+          content="Model-driven Form Library for React."
         />
         <meta property="og:site_name" content="Formst" />
-        <meta name="twitter:image:alt" content="Formst JS Library" />
+        <meta name="twitter:image:alt" content="Formst Library" />
         <meta
           property="og:image"
           content="https://formst.geekyants.com/img/og-icon.png"
