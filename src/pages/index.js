@@ -481,7 +481,7 @@ const features = [
 const products = [
   {
     product: "NativeBase",
-    link: "https://nativebase.github.io/",
+    link: "https://nativebase.io/",
   },
   {
     product: "React Native Aria",
