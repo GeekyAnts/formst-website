@@ -32,6 +32,12 @@
   width: 100%;
 }
 
+.products {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5rem;
+  width: 100%;
+}
 .featureImage {
   height: 100px;
   width: 100px;
@@ -47,6 +53,7 @@
   margin: 0 auto;
 }
 
+.talkSection,
 .exampleSection,
 .creatorSection {
   margin-bottom: 4rem;
@@ -74,5 +81,18 @@
   .introImg {
     width: 250px;
     height: 250px;
+  }
+
+  .talkVideo {
+    width: 100%;
+    height: 300px;
+  }
+
+  .exampleWrapper {
+    padding-bottom: 1rem;
+  }
+
+  .getStarted {
+    font-size: 14px;
   }
 }
